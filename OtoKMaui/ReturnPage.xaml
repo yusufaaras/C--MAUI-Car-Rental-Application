@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OtoKMaui.ReturnPage"
+             Title="ReturnPage"
+             BackgroundColor="Grey"
+             Loaded="OnPageLoaded">
+    
+    <ContentPage.Resources>
+        <Color x:Key="PrimaryColor">#FF0000</Color>
+        <Color x:Key="SecondaryColor">#D3D3D3</Color>
+        <Color x:Key="TextColor">#FFFFFF</Color>
+    </ContentPage.Resources>
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" BackgroundColor="{StaticResource PrimaryColor}" Padding="20">
+            <Label Text="CAR RENTAL SYSTEM" TextColor="{StaticResource TextColor}" FontSize="24" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            <Label Text="Return" TextColor="{StaticResource TextColor}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Column="0" Padding="10" HorizontalOptions="Start">
+                <Label x:Name="IdLabel" Text="Id:" TextColor="{StaticResource TextColor}" FontSize="18" Margin="0,10,0,0" />
+                <Entry x:Name="IdEntry" Placeholder="Enter Id" BackgroundColor="White" TextColor="Black" FontSize="22" HeightRequest="28" />
+
+                <Label x:Name="CarRegLabel" Text="CarReg" TextColor="{StaticResource TextColor}" FontSize="18" />
+                <Entry x:Name="CarRegEntry" Placeholder="Enter Car Reg" BackgroundColor="White" TextColor="Black" FontSize="22" HeightRequest="28" />
+
+                <Label x:Name="NameLabel" Text="Name:" TextColor="{StaticResource TextColor}" FontSize="18" Margin="0,10,0,0" />
+                <Entry x:Name="NameEntry" Placeholder="Enter Name" BackgroundColor="White" TextColor="Black" FontSize="22" HeightRequest="28" />
+
+                <Label x:Name="ReturnDateLabel" Text="RentalDate" TextColor="{StaticResource TextColor}" FontSize="18" />
+                <DatePicker x:Name="ReturnDatePicker" BackgroundColor="Green" TextColor="Black"  FontSize="22" HeightRequest="28" />
+
+                <Label x:Name="DelayLabel" Text="Delay:" TextColor="{StaticResource TextColor}" FontSize="18" Margin="0,10,0,0" />
+                <Entry x:Name="DelayEntry" Placeholder="Enter Delay" BackgroundColor="White" TextColor="Black" FontSize="22" HeightRequest="28" />
+
+                <Label x:Name="FineLabel" Text="Fine:" TextColor="{StaticResource TextColor}" FontSize="18" Margin="0,10,0,0" />
+                <Entry x:Name="FineEntry" Placeholder="Enter Fine" BackgroundColor="White" TextColor="Black" FontSize="22" HeightRequest="28" />
+
+                <Label x:Name="TotalLabel" Text="Total Fees:" TextColor="{StaticResource TextColor}" FontSize="18" Margin="0,10,0,0" />
+                <Entry x:Name="TotalEntry" Placeholder="Enter Total Fees" BackgroundColor="White" TextColor="Black" FontSize="22" HeightRequest="28" />
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="BackButton" Text="Back" Clicked="BackClicked" BackgroundColor="Red" TextColor="White" WidthRequest="150" HeightRequest="48" HorizontalOptions="Center"/>
+                    <Button x:Name="ReturnButton" Text="Return" Clicked="ReturnClicked" BackgroundColor="Red" TextColor="White" WidthRequest="150" HeightRequest="48" HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1">
+                <Label Text="Cars On Rent" TextColor="#d22e2e" FontSize="32" HorizontalOptions="Center" />
+                <ListView x:Name="RentListView" BackgroundColor="Red" ItemTapped="RentListView_ItemTapped" ItemSelected="RentListView_ItemSelected" Margin="10" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout BackgroundColor="red" Padding="10">
+                                    <Label TextColor="Black" Text="{Binding RentId}" HeightRequest="20"></Label>
+                                    <Label TextColor="DarkBlue" Text="{Binding CarReg}" HeightRequest="20"></Label>
+                                    <Label TextColor="DarkGreen" Text="{Binding CustName}" HeightRequest="20"></Label>
+                                    <Label TextColor="White" Text="{Binding RentFee}" HeightRequest="20"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <Label Text="Cars On Returned" TextColor="#d22e2e" FontSize="32" HorizontalOptions="Center" />
+                <ListView x:Name="ReturnListView" BackgroundColor="Red" ItemTapped="ReturnedOnItemTapped" ItemSelected="ReturnListView_ItemSelected" Margin="10" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout BackgroundColor="red" Padding="10">
+                                    <Label TextColor="Black" Text="{Binding ReturnId}" HeightRequest="20"></Label>
+                                    <Label TextColor="DarkBlue" Text="{Binding CarId}" HeightRequest="20"></Label>
+                                    <Label TextColor="DarkGreen" Text="{Binding CustName}" HeightRequest="20"></Label>
+                                    <Label TextColor="White" Text="{Binding ReturnDate}" HeightRequest="20"></Label>
+                                    <Label TextColor="Yellow" Text="{Binding Delay}" HeightRequest="20"></Label>
+                                    <Label TextColor="Purple" Text="{Binding Fine}" HeightRequest="20"></Label>
+                                    <Label TextColor="Wheat" Text="{Binding TotalFees}" HeightRequest="20"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

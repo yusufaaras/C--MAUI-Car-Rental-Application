@@ -1,0 +1,84 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OtoKMaui.Login">
+
+    <Grid>
+        <Image Source="login.jpg" Aspect="AspectFill" />
+
+        <ScrollView>
+            <VerticalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="Center">
+                <Button
+                    x:Name="SignBtn"
+                    Text="Sign Up"
+                    Clicked="SignClicked"
+                    BackgroundColor="Blue"
+                    TextColor="White"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    HorizontalOptions="Center" />
+
+                <Label
+                    Text="Hello, Welcome To Car Rental!"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="32"
+                    HorizontalOptions="Center" />
+
+                <Label
+                    x:Name="Username"
+                    Text="Username"
+                    FontSize="18"
+                    HorizontalOptions="Center" />
+
+                <Entry
+                    x:Name="Uname"
+                    Placeholder="Enter your username"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    
+                    WidthRequest="350"
+                    HeightRequest="50"
+                    HorizontalOptions="Center" />
+
+                <Label
+                    x:Name="Password"
+                    Text="Password"
+                    FontSize="18"
+                    HorizontalOptions="Center" />
+
+                <Entry
+                    x:Name="PassTb"
+                    Placeholder="Enter your password"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    WidthRequest="350"
+                    HeightRequest="50"
+                    IsPassword="True"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    x:Name="LoginBtn"
+                    Text="Login"
+                    Clicked="LoginClicked"
+                    BackgroundColor="Black"
+                    TextColor="Green"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    HorizontalOptions="Center" />
+                <Button
+                    x:Name="ClearBtn"
+                    Text="Clear"
+                    Clicked="ClearClicked"
+                    BackgroundColor="Black"
+                    TextColor="Red"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

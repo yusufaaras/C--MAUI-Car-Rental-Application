@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net7.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = OtoKMaui
+build_property.ProjectDir = C:\Users\Yusuf ARAS\OneDrive\Masaüstü\ders notları\bilgisayar programlama\OtoKMaui\
+
+[C:/Users/Yusuf ARAS/OneDrive/Masaüstü/ders notları/bilgisayar programlama/OtoKMaui/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OtoKMaui.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Yusuf ARAS/OneDrive/Masaüstü/ders notları/bilgisayar programlama/OtoKMaui/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OtoKMaui.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Yusuf ARAS/OneDrive/Masaüstü/ders notları/bilgisayar programlama/OtoKMaui/CarPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OtoKMaui.CarPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CarPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CarPage.xaml
+
+[C:/Users/Yusuf ARAS/OneDrive/Masaüstü/ders notları/bilgisayar programlama/OtoKMaui/CustomerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OtoKMaui.CustomerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CustomerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CustomerPage.xaml
+
+[C:/Users/Yusuf ARAS/OneDrive/Masaüstü/ders notları/bilgisayar programlama/OtoKMaui/DashBoardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OtoKMaui.DashBoardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = DashBoardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = DashBoardPage.xaml
+
+[C:/Users/Yusuf ARAS/OneDrive/Masaüstü/ders notları/bilgisayar programlama/OtoKMaui/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OtoKMaui.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = HomePage.xaml
+
+[C:/Users/Yusuf ARAS/OneDrive/Masaüstü/ders notları/bilgisayar programlama/OtoKMaui/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OtoKMaui.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = Login.xaml
+build_metadata.AdditionalFiles.RelativePath = Login.xaml
+
+[C:/Users/Yusuf ARAS/OneDrive/Masaüstü/ders notları/bilgisayar programlama/OtoKMaui/RentalPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OtoKMaui.RentalPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RentalPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RentalPage.xaml
+
+[C:/Users/Yusuf ARAS/OneDrive/Masaüstü/ders notları/bilgisayar programlama/OtoKMaui/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OtoKMaui.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Yusuf ARAS/OneDrive/Masaüstü/ders notları/bilgisayar programlama/OtoKMaui/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OtoKMaui.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Yusuf ARAS/OneDrive/Masaüstü/ders notları/bilgisayar programlama/OtoKMaui/ReturnPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OtoKMaui.ReturnPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ReturnPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ReturnPage.xaml
+
+[C:/Users/Yusuf ARAS/OneDrive/Masaüstü/ders notları/bilgisayar programlama/OtoKMaui/SignUpPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OtoKMaui.SignUpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SignUpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SignUpPage.xaml
+
+[C:/Users/Yusuf ARAS/OneDrive/Masaüstü/ders notları/bilgisayar programlama/OtoKMaui/UsersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OtoKMaui.UsersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UsersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UsersPage.xaml

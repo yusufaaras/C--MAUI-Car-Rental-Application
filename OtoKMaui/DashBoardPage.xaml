@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OtoKMaui.DashBoardPage"
+             Title="DashBoardPage"
+             BackgroundColor="#dddddd">
+
+    <ContentPage.Resources>
+        <Color x:Key="PrimaryColor">#FF0000</Color>
+        <Color x:Key="SecondaryColor">#D3D3D3</Color>
+        <Color x:Key="TextColor">#FFFFFF</Color>
+    </ContentPage.Resources>
+
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" BackgroundColor="{StaticResource PrimaryColor}" Padding="20">
+            <Label Text="CAR RENTAL SYSTEM" TextColor="{StaticResource TextColor}" FontSize="24" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            <Label Text="Dash Board" TextColor="{StaticResource TextColor}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" HorizontalOptions="Center">
+            <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                <Button x:Name="BackButton" Text="Back" Clicked="BackClicked" BackgroundColor="#8b2323" TextColor="White" WidthRequest="150" HeightRequest="50" Margin="0,20,0,0" />
+            </StackLayout>
+
+            <Image Source="car.jpg" VerticalOptions="Center" WidthRequest="800" HeightRequest="500" />
+
+            <StackLayout Orientation="Horizontal" Spacing="40">
+                <StackLayout Margin="0,-40,0,0">
+                    <ContentView BackgroundColor="Purple" HeightRequest="50" WidthRequest="200" TranslationY="-30">
+                        <Label Text="Cars" TextColor="White" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                    </ContentView>
+                    <ContentView BackgroundColor="#ee00ee" HeightRequest="100" WidthRequest="200" TranslationY="-30">
+                        <Label x:Name="CarLbl" Text="Car" TextColor="White" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                    </ContentView>
+                </StackLayout>
+
+                <StackLayout Margin="0,-40,0,0">
+                    <ContentView BackgroundColor="Green" HeightRequest="50" WidthRequest="200" TranslationY="-30">
+                        <Label Text="Customer" TextColor="White" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                    </ContentView>
+                    <ContentView BackgroundColor="#00cd00" HeightRequest="100" WidthRequest="200" TranslationY="-30">
+                        <Label x:Name="CustLbl" Text="Cust" TextColor="White" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                    </ContentView>
+                </StackLayout>
+                <StackLayout Margin="0,-40,0,0">
+                    <ContentView BackgroundColor="Blue" HeightRequest="50" WidthRequest="200" TranslationY="-30">
+                        <Label Text="Users" TextColor="White" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                    </ContentView>
+                    <ContentView BackgroundColor="#4876ff" HeightRequest="100" WidthRequest="200" TranslationY="-30">
+                        <Label x:Name="UsersLbl" Text="user" TextColor="White" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                    </ContentView>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

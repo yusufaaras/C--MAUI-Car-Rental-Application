@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OtoKMaui.HomePage"
+             Title="HomePage">
+    <Grid>
+        <Image Source="home_page.jpg" Aspect="AspectFill" />
+        <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout BackgroundColor="Red" Padding="10">
+                <Label Text="Car Rental" FontSize="24" TextColor="White" HorizontalOptions="Center" />
+            </StackLayout>
+            <StackLayout BackgroundColor="Red" Padding="10" Margin="0,5">
+                <Label Text="Home Page" FontSize="18" TextColor="White" HorizontalOptions="Center" />
+            </StackLayout>
+            <StackLayout Padding="20">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
+                    <Button
+                    x:Name="Car"
+                    Text="Car"
+                    Clicked="CarClicked"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"/>
+                    <Button
+                    x:Name="Customer"
+                    Text="Customer"
+                    Clicked="CustomerClicked"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"/>
+                    <Button
+                    x:Name="Rental"
+                    Text="Rental"
+                    Clicked="RentalClicked"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"/>
+                    <Button
+                    x:Name="Return"
+                    Text="Return"
+                    Clicked="ReturnClicked"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"/>
+                    <Button
+                    x:Name="Users"
+                    Text="Users"
+                    Clicked="UsersClicked"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"/>
+                    <Button
+                    x:Name="DashBoard"
+                    Text="DashBoard"
+                    Clicked="DashBoardClicked"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"/>
+                    
+                </StackLayout>
+                <!--<Image Source="home_page.jpg" HeightRequest="300" HorizontalOptions="Center" />-->
+            </StackLayout>
+            <Button 
+                x:Name="LogOut" 
+                Text="Logout"
+                Clicked="LogoutClicked"
+                BackgroundColor="Gray" 
+                TextColor="White" 
+                Margin="80" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
